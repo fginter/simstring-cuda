@@ -37,10 +37,10 @@ For GPU to make any sense, queries should preferably be batched into batches of 
 
 # Command-line usage:
 
-The command simcuda gets installed for you via pip, so maybe best install the package this way.
+The command `simscuda` gets installed for you via pip, so maybe best install the package this way.
 
     pip3 install path/to/builtwheel.whl
-    simcuda -h
+    simscuda -h
 
 Create an index out of all strings in a file, store it as `index.fi` file
 
@@ -48,11 +48,11 @@ Create an index out of all strings in a file, store it as `index.fi` file
 
 Look up the first 1000 of these again
 
-    bzcat strings.fi.bz2 | head -n 1000 | simcuda index.fi
+    bzcat strings.fi.bz2 | head -n 1000 | simscuda index.fi
 
 
 And get the output in a jsonl format for easier processing later
 
-    bzcat strings.fi.bz2 | head -n 1000 | simcuda --jsonl index.fi > out.jsonl
+    bzcat strings.fi.bz2 | head -n 1000 | simscuda --jsonl index.fi > out.jsonl
 
     
