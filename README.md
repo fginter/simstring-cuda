@@ -1,6 +1,6 @@
 A simple implementation of string search against a small-to-midsize (few million max) set of strings using torch and GPU acceleration. Cosine similarity of character 3-grams is the metric. This is meant to be a poor man's version of simstring, but does not scale up to anywhere near the DB sizes, and does not implement any of the fine tricks in simstring. On the other hand, it is easy to install. All it needs is sklearn and torch.
 
-If the queries are batched by about 100 hundred, the lookup against a DB of 1.4M strings from wikidata runs at 0.004sec per string on a relatively dated GPU.
+If the queries are batched by few hundred, the lookup against a DB of 1.4M strings from wikidata runs at 0.004sec per string on a relatively dated GPU.
 
 # Installation
 
