@@ -43,13 +43,16 @@ The command simcuda gets installed for you via pip, so maybe best install the pa
     simcuda -h
 
 Create an index out of all strings in a file, store it as `index.fi` file
+
     bzcat strings.fi.bz2 | simscuda -c index.fi
 
 Look up the first 1000 of these again
+
     bzcat strings.fi.bz2 | head -n 1000 | simcuda index.fi
 
 
 And get the output in a jsonl format for easier processing later
+
     bzcat strings.fi.bz2 | head -n 1000 | simcuda --jsonl index.fi > out.jsonl
 
     
