@@ -13,7 +13,8 @@ setup(
     author_email='filip.ginter@gmail.com',
     description="A poor-man's version of simistring-like lookup. Can hold its ground if the DB is few million strings, a GPU is present, and queries are batched by about a hundred strings.",
     long_description=long_description,
-    long_description_content_type='text/markdown'
+    long_description_content_type='text/markdown',
     packages=find_packages(),    
     install_requires=['sklearn', 'torch'],
+    scripts=['simscuda']
 )
