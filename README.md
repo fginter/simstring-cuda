@@ -10,7 +10,7 @@ or
 
     python3 setup.py bdist_wheel
 
-the wheel file is in `dist/SimString_cuda-0.1.0-py3-none-any.whl` and then you can install it anywhere you want with `pip3 install ____.whl`
+the wheel file is in `dist/SimString_cuda-0.1.0-py3-none-any.whl` and then you can install it anywhere you want with `pip3 install path/to/wheel.whl` This has the advantage of adding the command-line executable `simscuda` into your path.
 
 # Usage
 
